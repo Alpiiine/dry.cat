@@ -1,0 +1,32 @@
+baseURL = 'https://dry.cat/'
+languageCode = 'en-gb'
+title = 'dry.cat'
+theme = 'digitalgarden'
+
+[Params]
+  description = "Wangchang Pan's Home Page"
+  images = ['/digital-garden-logo.png']
+  enableSearch = true
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+
+[[menu.social]]
+  name = 'GitHub'
+  url = 'https://github.com/Alpiiine'
+  weight = 1
+[[menu.social]]
+  name = 'Email'
+  url = 'mailto:w.pan@dry.cat'
+  weight = 2
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true
