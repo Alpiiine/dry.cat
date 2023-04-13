@@ -59,6 +59,12 @@ jobs:
           hugo \
             --gc \
             --minify
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: public
+          path: ./public
+          retention-days: 7
       - name: Deploy to Cloudflare Pages
         id: deployment
         uses: cloudflare/pages-action@v1
