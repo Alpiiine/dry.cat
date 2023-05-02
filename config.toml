@@ -13,6 +13,10 @@ theme = 'digitalgarden'
   name = 'Home'
   url = '/'
   weight = 1
+[[menu.main]]
+  name = 'Articles'
+  url = '/articles'
+  weight = 2
 
 [[menu.social]]
   name = 'GitHub'
